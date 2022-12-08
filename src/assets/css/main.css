@@ -1,0 +1,63 @@
+/* -------------- Globals -------------- */
+:root {
+  --navy: #292c67;
+  --golden: #c19746;
+  --yellow: #ffdc7b;
+}
+/* -------------- Fonts -------------- */
+@import url("./farhang_font.css");
+/* ----------------------------------- */
+/* -------------- Elements -------------- */
+body > * {
+  margin: 0;
+  padding: 0;
+}
+/* ----------------------------------- */
+/* ----------------------------------- */
+
+/* -------------- Individuals -------------- */
+.wrapper {
+  background-image: url(../images/index_bg.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+/* ----------------------------------- */
+
+/* --------------  Nav Bar -------------- */
+.menu li {
+  position: relative;
+}
+.menu li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  margin-top: 2px;
+  position: absolute;
+  transition: 0.3s cubic-bezier(1, 0, 0, 1);
+}
+
+.menu li:hover:after,
+.menu li.current::after {
+  width: 70%;
+}
+.menu li:hover,
+.menu li.current {
+  font-weight: bold;
+}
+/* -------------- Nav on scroll -------------- */
+nav.sticky-theme {
+  background-color: #fff;
+  color: var(--navy);
+  border-radius: 0 0 50px 50px;
+  height: 100px;
+}
+/* ----------------------------------- */
+.quote {
+  margin: 55% 0 0 0;
+}
+/* -------------- Responsive -------------- */
+@import url(./responsive.css);
+/* ----------------------------------- */
