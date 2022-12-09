@@ -3,15 +3,22 @@
   --navy: #292c67;
   --golden: #c19746;
   --yellow: #ffdc7b;
+  --white-img: brightness(0) invert(1);
+  --pace: 0.3s cubic-bezier(1, 0, 0, 1);
 }
+
 /* -------------- Fonts -------------- */
 @import url("./farhang_font.css");
+
 /* ----------------------------------- */
 /* -------------- Elements -------------- */
-body > * {
+
+body>* {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
+
 /* ----------------------------------- */
 /* ----------------------------------- */
 
@@ -21,13 +28,23 @@ body > * {
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
+  text-align: center;
 }
-/* ----------------------------------- */
+
 
 /* --------------  Nav Bar -------------- */
+.navbar-div {
+  box-shadow: rgba(0, 0, 0, .5) 0px 0px 25px;
+  height: 0;
+  transition: var(--pace);
+  z-index: 9999;
+}
+
 .menu li {
   position: relative;
+  transition: var(--pace);
 }
+
 .menu li::after {
   content: "";
   display: block;
@@ -36,28 +53,101 @@ body > * {
   background: #fff;
   margin-top: 2px;
   position: absolute;
-  transition: 0.3s cubic-bezier(1, 0, 0, 1);
+  transition: var(--pace);
 }
 
 .menu li:hover:after,
 .menu li.current::after {
   width: 70%;
 }
+
+.navbar-logo {
+  all: unset;
+  transition: .3s !important;
+  width: 0%;
+}
+
+/* no underline for navbar logo */
+.navbar-logo:hover:after {
+  all: unset;
+}
+
 .menu li:hover,
 .menu li.current {
   font-weight: bold;
 }
-/* -------------- Nav on scroll -------------- */
-nav.sticky-theme {
+
+.tabliqat_logo,
+.mobasheran_logo {
+  filter: var(--white-img);
+}
+
+/* -------------- Navbar on scroll -------------- */
+.navbar-div.sticky {
   background-color: #fff;
   color: var(--navy);
   border-radius: 0 0 50px 50px;
   height: 100px;
 }
-/* ----------------------------------- */
-.quote {
-  margin: 55% 0 0 0;
+
+.navbar-div nav {
+  align-items: flex-start;
 }
+
+.navbar-div.sticky .menu li {
+  align-self: flex-start;
+  margin: 30px 0 0 0;
+}
+
+.navbar-div.sticky .brands-ul {
+  margin: 10px 0 0 0;
+}
+
+.navbar-div.sticky .navbar-logo {
+  margin: 0 !important;
+  width: 40%;
+}
+
+.navbar-div.sticky .menu li:hover::after,
+.navbar-div.sticky .menu li.current::after {
+  background-color: var(--navy);
+}
+
+.navbar-div.sticky .tabliqat_logo,
+.navbar-div.sticky .mobasheran_logo {
+  filter: unset;
+}
+
+/* ----------------------------------- */
+/* -------------- Quote Section -------------- */
+.quote {
+  margin: 60% 0 0 0;
+}
+
+.quote .section-title {
+  font-size: 50px;
+}
+.course_cat{
+  position: relative;
+  margin: 5px;
+}
+.course_cat svg{
+scale: .9;
+}
+.course_cat:hover button,
+.course_cat.active button  {
+  fill: var(--navy);
+  color: #fff;
+}
+
+.course_cat:hover svg,
+.course_cat.active  svg {
+  filter: drop-shadow(0 27px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 27px 13px rgb(0 0 0 / 0.08));
+}
+
+/* ----------------------------------- */
+
+
 /* -------------- Responsive -------------- */
 @import url(./responsive.css);
 /* ----------------------------------- */

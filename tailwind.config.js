@@ -13,6 +13,7 @@ module.exports = {
       navy: "#292C67",
       yellow: "#FFDC7B",
       white: "#fff",
+      black:"#000",
     },
     fontFamily: {
       farhang: ["farhang"],
