@@ -19,6 +19,10 @@ body>* {
   user-select: none;
 }
 
+li {
+  cursor: pointer;
+}
+
 /* ----------------------------------- */
 /* ----------------------------------- */
 
@@ -88,6 +92,7 @@ body>* {
   color: var(--navy);
   border-radius: 0 0 50px 50px;
   height: 100px;
+  position: sticky;
 }
 
 .navbar-div nav {
@@ -127,27 +132,41 @@ body>* {
 .quote .section-title {
   font-size: 50px;
 }
-.course_cat{
+
+.course_cat {
   position: relative;
   margin: 5px;
 }
-.course_cat svg{
-scale: .9;
+
+.course_cat svg {
+  scale: .9;
 }
+
 .course_cat:hover button,
-.course_cat.active button  {
+.course_cat.active button {
   fill: var(--navy);
   color: #fff;
+  filter: drop-shadow(0 27px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 27px 13px rgb(0 0 0 / 0.08));
 }
 
 .course_cat:hover svg,
-.course_cat.active  svg {
+.course_cat.active svg {
   filter: drop-shadow(0 27px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 27px 13px rgb(0 0 0 / 0.08));
 }
 
 /* ----------------------------------- */
+/* -------------- Models Section -------------- */
+.app-btn{
+  margin:10px ;
+  min-width: fit-content;
+}
+.app-btn:hover, .app-btn.active {
+  background: var(--navy);
+  color: white;
+  filter: drop-shadow(0 27px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 27px 13px rgb(0 0 0 / 0.08));
+}
 
-
+/* ----------------------------------- */
 /* -------------- Responsive -------------- */
 @import url(./responsive.css);
 /* ----------------------------------- */
