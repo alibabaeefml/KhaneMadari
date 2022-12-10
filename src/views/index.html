@@ -7,20 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="/src/assets/css/main.css" />
+  <link rel="stylesheet" href="/src/assets/css/responsive.css" />
+  <link rel="stylesheet" href="https://gitcdn.ir/library/PersianFonts/farhang/fontiran.css">
   <link rel="stylesheet" href="/src/assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/src/assets/css/owl.theme.default.min.css">
   <link href="/dist/output.css" rel="stylesheet" />
-
 </head>
 
 <body class="bg-black">
 
-  <div class="wrapper container center bg-golden text-white" dir="rtl">
+  <div class="wrapper flex flex-col  container center bg-golden text-white" dir="rtl">
     <!-- Nav Bar -->
-    <div class="navbar-div top-0">
-      <nav class="flex flex-row justify-between items-center px-20 pt-3">
-        <ul class="menu flex flex-row items-center">
-          <li class="navbar-logo"> <img src="/src/assets/images/navbar_logo.png"></li>
+    <button class="hidden fixed z-[99999] top-5 right-5 max-sm:block 
+    bg-navy text-white hover:bg-white hover:text-navy text-[20px] font-black
+     px-4 py-1 border-2 rounded-lg" onclick="$('.navbar-div').toggleClass('max-sm:hidden');">×</button>
+    <div class="navbar-div max-sm:fixed max-sm:w-full max-sm:h-full max-sm:bg-navy max-sm:text-yellow max-sm:hidden">
+      <nav class=" flex flex-row max-sm:flex-col max-sm:absolute max-sm:top-[10%] max-sm:left-[calc(50%_-_190px)] justify-between items-start max-sm:items-center lg:px-20 pt-3">
+        <ul class="menu flex flex-row max-sm:flex-col items-center">
+          <li class="navbar-logo max-sm:w-[100%]"> <img src="/src/assets/images/navbar_logo.png"></li>
           <li class="px-3 current"><a href="">صفحه اصلی</a></li>
           <li class="px-3"><a href="">دوره ها</a></li>
           <li class="px-3"><a href="">مدل ها</a></li>
@@ -39,10 +43,9 @@
       </nav>
     </div>
     <!-- Quote -->
-    <section class="quote">
-
+    <section class="quote mt-[66%]">
       <h1 class="section-title">خانه مادری</h1>
-      <p class="max-w-4xl mx-auto text-justify text-[20px]">
+      <p class="max-w-[80%] mx-auto text-justify text-[20px]">
         فاطمه‌ی زهرا سلام الله علیها به صورت، یک بشر و یک زن، آن هم زنی جوان
         است؛ اما در معنا، یک حقیقت عظیم و یک نور درخشان الهی و یک بنده‌ی
         صالح و یک انسان ممتاز و برگزیده است؛ زنی از لحاظ مقام معنوی به جایی
@@ -50,7 +53,7 @@
         میگویند و حقایق را به او ارایه میدهند. محدّثه است؛ یعنی کسی است که
         فرشتگان با او حدیث میکنند و حرف میزنند
       </p>
-      <p class="text-yellow text-[20px]">سید علی حسینی خامنه ای مدظله العالی | ۱۳۶۸/۱۰/۲۶</p>
+      <p class="text-yellow text-[20px] w-[90%] mx-auto">سید علی حسینی خامنه ای مدظله العالی | ۱۳۶۸/۱۰/۲۶</p>
       <img class="mx-auto mt-4" src="../assets/images/the_sign.png" alt="" />
 
     </section>
@@ -61,7 +64,7 @@
         <h1 class="section-title text-[36px]">دوره های آموزشی</h1>
         <img src="../assets/images/title_vintage.png" alt="" />
       </div>
-      <div class="course-cats flex items-center w-[80%]  mx-auto mt-16">
+      <div class="course-cats flex items-center w-[80%] max-sm:w-[95%] mx-auto mt-16">
         <span class="right-slide-btn cursor-pointer" onclick="$('.course-cats ul')[0].scrollBy(100, 0)">
           <svg xmlns="http://www.w3.org/2000/svg" width="8.413" height="13.079" viewBox="0 0 8.413 13.079"
             stroke="#fff">
@@ -153,87 +156,24 @@
       </div>
 
       <div class="course_items_div w-[80%] mx-auto grid grid-cols-12 gap-4">
-        <div class="col-span-3 h-[350px] course_item bg-yellow text-black rounded-3xl bg-contain
+        <div class=" xl:col-span-3 lg:col-span-4 md:col-span-6 max-md:col-span-12 
+        h-[350px] mt-4
+         course_item bg-yellow text-black rounded-3xl bg-contain max-lg:bg-[length:100%_50%]
          bg-no-repeat border-white border-2
          flex flex-col justify-end hover:bg-navy hover:text-yellow duration-300 group
-         " style="background-image:url('../assets/images/1576423394.png')">
-          <div class="teacher_avatar flex items-end justify-start mb-5">
+         " >
+         <div class="w-full h-full rounded-3xl "><img class="w-full h-full object-cover" src="../assets/images/1576423394.png" alt=""></div>
+          <div class="teacher_avatar flex items-end justify-start mb-1">
             <div class="rounded-3xl border-1 border-yellow mr-4">
               <img width="55" src="/src/assets/images/teacher_avatar.png" alt="" />
             </div>
             <div class="name-role flex flex-col items-start mr-1 ">
-              <div class="name text-[13px]">استاد محمودی</div>
-              <div class="duration-300 group-hover:text-white text-navy text-[11px]">مدرس دوره های خانواده</div>
+              <div class="name text-[15px] max-sm:text-[20px]">استاد محمودی</div>
+              <div class="duration-300 group-hover:text-white text-navy text-[14px] max-sm:text-[16px]">مدرس دوره های خانواده</div>
             </div>
           </div>
-          <div class="course-title text-[18px] font-bold mb-4">مهدویت در حفظ بنیان خانواده</div>
-          <div class="details mb-4 w-[85%] mx-auto text-[11px] flex justify-between">
-            <span class="hours">120 ساعت</span>
-            <span class="status">آنلاین</span>
-          </div>
-          <button class="visit-register-btn mb-4 bg-navy text-white
-           rounded-2xl w-[90%] p-2 mx-auto group-hover:bg-white group-hover:text-navy duration-300">مشاهده و ثبت
-            نام</button>
-        </div>
-        <div class="col-span-3 h-[350px] course_item bg-yellow text-black rounded-3xl bg-contain
-         bg-no-repeat border-white border-2
-         flex flex-col justify-end hover:bg-navy hover:text-yellow duration-300 group
-         " style="background-image:url('../assets/images/1576423394.png')">
-          <div class="teacher_avatar flex items-end justify-start mb-5">
-            <div class="rounded-3xl border-1 border-yellow mr-4">
-              <img width="55" src="/src/assets/images/teacher_avatar.png" alt="" />
-            </div>
-            <div class="name-role flex flex-col items-start mr-1 ">
-              <div class="name text-[13px]">استاد محمودی</div>
-              <div class="duration-300 group-hover:text-white text-navy text-[11px]">مدرس دوره های خانواده</div>
-            </div>
-          </div>
-          <div class="course-title text-[18px] font-bold mb-4">مهدویت در حفظ بنیان خانواده</div>
-          <div class="details mb-4 w-[85%] mx-auto text-[11px] flex justify-between">
-            <span class="hours">120 ساعت</span>
-            <span class="status">آنلاین</span>
-          </div>
-          <button class="visit-register-btn mb-4 bg-navy text-white
-           rounded-2xl w-[90%] p-2 mx-auto group-hover:bg-white group-hover:text-navy duration-300">مشاهده و ثبت
-            نام</button>
-        </div>
-        <div class="col-span-3 h-[350px] course_item bg-yellow text-black rounded-3xl bg-contain
-        bg-no-repeat border-white border-2
-        flex flex-col justify-end hover:bg-navy hover:text-yellow duration-300 group
-        " style="background-image:url('../assets/images/1576423394.png')">
-          <div class="teacher_avatar flex items-end justify-start mb-5">
-            <div class="rounded-3xl border-1 border-yellow mr-4">
-              <img width="55" src="/src/assets/images/teacher_avatar.png" alt="" />
-            </div>
-            <div class="name-role flex flex-col items-start mr-1 ">
-              <div class="name text-[13px]">استاد محمودی</div>
-              <div class="duration-300 group-hover:text-white text-navy text-[11px]">مدرس دوره های خانواده</div>
-            </div>
-          </div>
-          <div class="course-title text-[18px] font-bold mb-4">مهدویت در حفظ بنیان خانواده</div>
-          <div class="details mb-4 w-[85%] mx-auto text-[11px] flex justify-between">
-            <span class="hours">120 ساعت</span>
-            <span class="status">آنلاین</span>
-          </div>
-          <button class="visit-register-btn mb-4 bg-navy text-white
-          rounded-2xl w-[90%] p-2 mx-auto group-hover:bg-white group-hover:text-navy duration-300">مشاهده و ثبت
-            نام</button>
-        </div>
-        <div class="col-span-3 h-[350px] course_item bg-yellow text-black rounded-3xl bg-contain
-         bg-no-repeat border-white border-2
-         flex flex-col justify-end hover:bg-navy hover:text-yellow duration-300 group
-         " style="background-image:url('../assets/images/1576423394.png')">
-          <div class="teacher_avatar flex items-end justify-start mb-5">
-            <div class="rounded-3xl border-1 border-yellow mr-4">
-              <img width="55" src="/src/assets/images/teacher_avatar.png" alt="" />
-            </div>
-            <div class="name-role flex flex-col items-start mr-1 ">
-              <div class="name text-[13px]">استاد محمودی</div>
-              <div class="duration-300 group-hover:text-white text-navy text-[11px]">مدرس دوره های خانواده</div>
-            </div>
-          </div>
-          <div class="course-title text-[18px] font-bold mb-4">مهدویت در حفظ بنیان خانواده</div>
-          <div class="details mb-4 w-[85%] mx-auto text-[11px] flex justify-between">
+          <div class="course-title text-[20px] font-bold ">مهدویت در حفظ بنیان خانواده</div>
+          <div class="details mb-2 w-[85%] mx-auto text-[15px] flex justify-between">
             <span class="hours">120 ساعت</span>
             <span class="status">آنلاین</span>
           </div>
@@ -251,7 +191,7 @@
         <h1 class="section-title text-[36px]">مدل های آموزشی</h1>
         <img src="../assets/images/title_vintage.png" alt="" />
       </div>
-      <div class="model-cats flex items-center w-[80%]  mx-auto mt-16">
+      <div class="model-cats flex items-center w-[80%] mx-auto mt-16">
         <span class="right-slide-btn cursor-pointer" onclick="$('.owl-carousel').trigger('next.owl.carousel');">
           <svg xmlns="http://www.w3.org/2000/svg" width="8.413" height="13.079" viewBox="0 0 8.413 13.079"
             stroke="#fff">
@@ -313,74 +253,12 @@
         </span>
       </div>
       <div class="model-items-div w-[80%] mx-auto grid grid-cols-12 gap-4 mt-10">
-        <div class="model-item col-span-6 h-[180px] course_item bg-yellow text-black rounded-3xl bg-contain
+        <div class="model-item xl:col-span-6 max-xl:col-span-12 h-[180px] max-md:h-[400px]
+         course_item bg-yellow text-black rounded-3xl bg-contain max-md:bg-top max-md:bg-[length:100%_50%]
         bg-no-repeat bg-right border-white border-2
-        flex flex-col items-end p-3 justify-between hover:bg-navy hover:text-white duration-300 group"
+        flex flex-col items-end p-3 justify-between max-md:justify-end hover:bg-navy hover:text-white duration-300 group"
           style="background-image: url('/src/assets/images/5693162.png');">
-          <div class="model-wrapper w-[68%] ">
-            <div class="title-div flex flex-col items-start">
-              <div class="pre-title text-[13px] ">روتیتر</div>
-              <div class="title text-[18px] text-navy duration-300
-               group-hover:text-yellow">مهدویت در حفظ بنیان خانواده</div>
-            </div>
-            <div class="model-content text-justify text-[13px] max-h-[70px] overflow-auto">
-              <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-                ستون و سطرآنچنان که لازم است
-              </p>
-            </div>
-            <button class="visit-register-btn bg-navy text-white mt-4
-             rounded-2xl w-[90%] p-2 mx-auto group-hover:bg-white group-hover:text-navy duration-300">مشاهده و ثبت
-              نام</button>
-          </div>
-        </div>
-        <div class="model-item col-span-6 h-[180px] course_item bg-yellow text-black rounded-3xl bg-contain
-        bg-no-repeat bg-right border-white border-2
-        flex flex-col items-end p-3 justify-between hover:bg-navy hover:text-white duration-300 group"
-          style="background-image: url('/src/assets/images/5693162.png');">
-          <div class="model-wrapper w-[68%] ">
-            <div class="title-div flex flex-col items-start">
-              <div class="pre-title text-[13px] ">روتیتر</div>
-              <div class="title text-[18px] text-navy duration-300
-               group-hover:text-yellow">مهدویت در حفظ بنیان خانواده</div>
-            </div>
-            <div class="model-content text-justify text-[13px] max-h-[70px] overflow-auto">
-              <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-                ستون و سطرآنچنان که لازم است
-              </p>
-            </div>
-            <button class="visit-register-btn bg-navy text-white mt-4
-             rounded-2xl w-[90%] p-2 mx-auto group-hover:bg-white group-hover:text-navy duration-300">مشاهده و ثبت
-              نام</button>
-          </div>
-        </div>
-        <div class="model-item col-span-6 h-[180px] course_item bg-yellow text-black rounded-3xl bg-contain
-        bg-no-repeat bg-right border-white border-2
-        flex flex-col items-end p-3 justify-between hover:bg-navy hover:text-white duration-300 group"
-          style="background-image: url('/src/assets/images/5693162.png');">
-          <div class="model-wrapper w-[68%] ">
-            <div class="title-div flex flex-col items-start">
-              <div class="pre-title text-[13px] ">روتیتر</div>
-              <div class="title text-[18px] text-navy duration-300
-               group-hover:text-yellow">مهدویت در حفظ بنیان خانواده</div>
-            </div>
-            <div class="model-content text-justify text-[13px] max-h-[70px] overflow-auto">
-              <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-                ستون و سطرآنچنان که لازم است
-              </p>
-            </div>
-            <button class="visit-register-btn bg-navy text-white mt-4
-             rounded-2xl w-[90%] p-2 mx-auto group-hover:bg-white group-hover:text-navy duration-300">مشاهده و ثبت
-              نام</button>
-          </div>
-        </div>
-        <div class="model-item col-span-6 h-[180px] course_item bg-yellow text-black rounded-3xl bg-contain
-        bg-no-repeat bg-right border-white border-2
-        flex flex-col items-end p-3 justify-between hover:bg-navy hover:text-white duration-300 group"
-          style="background-image: url('/src/assets/images/5693162.png');">
-          <div class="model-wrapper w-[68%] ">
+          <div class="model-wrapper w-[68%] max-md:w-full">
             <div class="title-div flex flex-col items-start">
               <div class="pre-title text-[13px] ">روتیتر</div>
               <div class="title text-[18px] text-navy duration-300
@@ -400,7 +278,7 @@
       </div>
       <div class="mt-10"><a href="" class="underline">نمایش همه موارد این مدل</a></div>
     </section>
-    <!-- Training Docs -->
+    <!-- Training Docs -->  
     <section class="training-docs mt-16">
       <div class="title-div flex items-center justify-center">
         <img src="../assets/images/title_vintage.png" alt="" />
@@ -469,7 +347,8 @@
         </span>
       </div>
       <div class="doc_items_div w-[80%] mx-auto grid grid-cols-12 gap-4 mt-10">
-        <div class="col-span-4 h-[410px] course_item bg-yellow text-black rounded-3xl bg-contain
+        <div class=" lg:col-span-4 md:col-span-6 max-md:col-span-12 
+         h-[410px] doc_item bg-yellow text-black rounded-3xl bg-contain
          bg-no-repeat border-white border-2
          flex flex-col justify-end hover:bg-navy hover:text-white duration-300 group relative"
           style="background-image:url('../assets/images/1651616.png')">
@@ -503,162 +382,109 @@ rounded-2xl w-full p-2 mx-auto group-hover:bg-white group-hover:text-navy durati
               نام</button>
           </div>
         </div>
-        <div class="col-span-4 h-[410px] course_item bg-yellow text-black rounded-3xl bg-contain
-        bg-no-repeat border-white border-2
-        flex flex-col justify-end hover:bg-navy hover:text-white duration-300 group relative"
-         style="background-image:url('../assets/images/1651616.png')">
-         <div class="play-div absolute top-[17%] left-[40%] flex flex-col justify-center">
-           <button class="play-btn flex items-center justify-center 
-           duration-300 py-6 rounded-full bg-navy fill-white
-           group-hover:bg-yellow group-hover:fill-navy ">
-             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 19 22">
-               <path id="Polygon_1" data-name="Polygon 1"
-                 d="M9.269,2.99a2,2,0,0,1,3.462,0L20.262,16a2,2,0,0,1-1.731,3H3.469a2,2,0,0,1-1.731-3Z"
-                 transform="translate(19) rotate(90)" />
-             </svg>
-           </button>
-           <span class="duration mt-4 rounded-full bg-navy text-white duration-300
-           group-hover:bg-yellow group-hover:text-navy px-4 py-1 font-bold">13:00</span>
-         </div>
-         <div class="doc-wrapper p-4 h-[50%]">
-           <div class="title text-[18px] text-navy duration-300
-         group-hover:text-yellow text-right">
-             مهدویت در حفظ بنیان خانواده
-           </div>
-           <div class="model-content text-justify text-[13px] 
-           h-[90px] overflow-auto mt-2">
-             <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-               استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-               ستون و سطرآنچنان که لازم است
-             </p>
-           </div>
-           <button class="visit-register-btn bg-navy text-white mt-4
-rounded-2xl w-full p-2 mx-auto group-hover:bg-white group-hover:text-navy duration-300">مشاهده و ثبت
-             نام</button>
-         </div>
-       </div>
-       <div class="col-span-4 h-[410px] course_item bg-yellow text-black rounded-3xl bg-contain
-       bg-no-repeat border-white border-2
-       flex flex-col justify-end hover:bg-navy hover:text-white duration-300 group relative"
-        style="background-image:url('../assets/images/1651616.png')">
-        <div class="play-div absolute top-[17%] left-[40%] flex flex-col justify-center">
-          <button class="play-btn flex items-center justify-center 
-          duration-300 py-6 rounded-full bg-navy fill-white
-          group-hover:bg-yellow group-hover:fill-navy ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 19 22">
-              <path id="Polygon_1" data-name="Polygon 1"
-                d="M9.269,2.99a2,2,0,0,1,3.462,0L20.262,16a2,2,0,0,1-1.731,3H3.469a2,2,0,0,1-1.731-3Z"
-                transform="translate(19) rotate(90)" />
-            </svg>
-          </button>
-          <span class="duration mt-4 rounded-full bg-navy text-white duration-300
-          group-hover:bg-yellow group-hover:text-navy px-4 py-1 font-bold">13:00</span>
-        </div>
-        <div class="doc-wrapper p-4 h-[50%]">
-          <div class="title text-[18px] text-navy duration-300
-        group-hover:text-yellow text-right">
-            مهدویت در حفظ بنیان خانواده
-          </div>
-          <div class="model-content text-justify text-[13px] 
-          h-[90px] overflow-auto mt-2">
-            <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-              ستون و سطرآنچنان که لازم است
-            </p>
-          </div>
-          <button class="visit-register-btn bg-navy text-white mt-4
-rounded-2xl w-full p-2 mx-auto group-hover:bg-white group-hover:text-navy duration-300">مشاهده و ثبت
-            نام</button>
-        </div>
-      </div>
       </div>
       <div class="mt-10 "><a href="" class="underline">نمایش همه موارد این مدل</a>
     </section>
     <!-- Footer -->
-    <footer>
-      <div class="row">
-        <div class="">
-          <img src="../assets/images/door.png" alt="" />
-        </div>
-        <div class="desc">
-          <div class="desc-item">
-            <div class="title">توضیحات لندینگ خانه مادری</div>
-            <div class="content">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
-              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
-              برای طراحان
+    <footer class="mt-24">
+      <div class="grid grid-cols-12 gap-2 items-end justify-items-end w-[80%] h-[600px] mx-auto ">
+        <div class="info col-span-3 flex flex-col justify-center order-1 w-full h-[70%]">
+          <!-- Logos -->
+          <div class="logos flex flex-col ">
+            <div class="w-[250px] bg-white rounded-2xl flex justify-center items-center">
+              <img width="200" src="../assets/images/khane_madari_logo_teal.png" alt="" />
             </div>
+            <div class="flex items-center justify-between mt-3">
+              <div class="w-[48%] h-[100px] bg-white rounded-2xl
+              flex justify-center items-center">
+                <img
+                  width="80" src="../assets/images/mobasheran_logo_big.png" alt="" />
+              </div>
+              <div class="w-[48%] h-[100px] bg-white rounded-2xl
+              flex justify-center items-center">
+                <img width="80" src="../assets/images/tabliqat_logo_big.png" alt="" />
+              </div>
+            </div> 
+            
           </div>
-          <div class="desc-item">
-            <div class="title">توضیحات درباره ما</div>
-            <div class="content">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
-              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
-              برای طراحان
-            </div>
-          </div>
-        </div>
-        <div class="info">
-          <div class="logos">
-            <div>
-              <img src="../assets/images/khane_madari_logo_teal.png" alt="" />
-            </div>
-            <div>
-              <img src="../assets/images/mobasheran_logo_colored.png" alt="" />
-            </div>
-            <div>
-              <img src="../assets/images/tabliqat_logo_black.png" alt="" />
-            </div>
-          </div>
-          <div>www.yourwebsite.ir</div>
-          <div class="contact-info">
-            <div class="social">
-              <ul>
-                <li>
+          <div class="text-navy text-[18px] tracking-[5px] ">www.yourwebsite.ir</div>
+          <!-- Contact us -->
+          <div class="contact-info flex items-center justify-between">
+            <div class="font-bold text-black px-2 text-[14px] text-center
+             border-2 rounded-lg border-navy w-[48%] tracking-widest">02539898952</div>
+            <div class="social w-[48%]">
+              <ul class="flex items-center justify-between flex-row-reverse ">
+                <li class="bg-navy fill-white hover:bg-yellow hover:fill-navy
+                 duration-300 rounded-lg w-7 h-7 flex items-center justify-center ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15.131" height="15.127" viewBox="0 0 15.131 15.127">
                     <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram"
                       d="M7.562,5.923A3.878,3.878,0,1,0,11.44,9.8,3.872,3.872,0,0,0,7.562,5.923Zm0,6.4A2.521,2.521,0,1,1,10.083,9.8,2.526,2.526,0,0,1,7.562,12.323ZM12.5,5.764a.9.9,0,1,1-.9-.9A.9.9,0,0,1,12.5,5.764Zm2.569.918a4.477,4.477,0,0,0-1.222-3.17,4.506,4.506,0,0,0-3.17-1.222c-1.249-.071-4.992-.071-6.241,0A4.5,4.5,0,0,0,1.27,3.509,4.491,4.491,0,0,0,.048,6.679c-.071,1.249-.071,4.992,0,6.241A4.477,4.477,0,0,0,1.27,16.09a4.512,4.512,0,0,0,3.17,1.222c1.249.071,4.992.071,6.241,0a4.477,4.477,0,0,0,3.17-1.222,4.506,4.506,0,0,0,1.222-3.17c.071-1.249.071-4.989,0-6.238ZM13.459,14.26A2.553,2.553,0,0,1,12.021,15.7a16.671,16.671,0,0,1-4.459.3A16.8,16.8,0,0,1,3.1,15.7,2.553,2.553,0,0,1,1.665,14.26a16.671,16.671,0,0,1-.3-4.459,16.8,16.8,0,0,1,.3-4.459A2.553,2.553,0,0,1,3.1,3.9a16.671,16.671,0,0,1,4.459-.3,16.8,16.8,0,0,1,4.459.3,2.553,2.553,0,0,1,1.438,1.438,16.671,16.671,0,0,1,.3,4.459A16.662,16.662,0,0,1,13.459,14.26Z"
-                      transform="translate(0.005 -2.238)" fill="#fff" />
+                      transform="translate(0.005 -2.238)"  />
                   </svg>
                 </li>
-                <li>
+                <li class="bg-navy fill-white hover:bg-yellow hover:fill-navy
+                 duration-300 rounded-lg w-7 h-7 flex items-center justify-center ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14.427" height="12.099" viewBox="0 0 14.427 12.099">
                     <path id="Icon_awesome-telegram-plane" data-name="Icon awesome-telegram-plane"
                       d="M14.387,5.63,12.21,15.9c-.164.725-.593.9-1.2.564L7.691,14.016l-1.6,1.539a.833.833,0,0,1-.667.325L5.662,12.5,11.81,6.947c.267-.238-.058-.37-.415-.132L3.794,11.6.522,10.576C-.189,10.354-.2,9.865.67,9.523l12.8-4.931C14.062,4.37,14.58,4.725,14.387,5.63Z"
-                      transform="translate(-0.001 -4.528)" fill="#fff" />
+                      transform="translate(-0.001 -4.528)"  />
                   </svg>
                 </li>
-                <li>
+                <li class="bg-navy fill-white hover:bg-yellow hover:fill-navy
+                 duration-300 rounded-lg w-7 h-7 flex items-center justify-center ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14.538" height="10.064" viewBox="0 0 14.538 10.064">
                     <g id="Icon_ionic-ios-mail" data-name="Icon ionic-ios-mail" transform="translate(-3.375 -7.875)">
                       <path id="Path_17" data-name="Path 17"
                         d="M17.794,10.335l-3.76,3.83a.068.068,0,0,0,0,.1l2.631,2.8a.453.453,0,0,1,0,.643.456.456,0,0,1-.643,0L13.4,14.917a.072.072,0,0,0-.1,0l-.64.65a2.814,2.814,0,0,1-2.006.846,2.87,2.87,0,0,1-2.048-.87l-.615-.626a.072.072,0,0,0-.1,0L5.269,17.709a.456.456,0,0,1-.643,0,.453.453,0,0,1,0-.643l2.631-2.8a.074.074,0,0,0,0-.1l-3.764-3.83a.069.069,0,0,0-.119.049v7.664a1.122,1.122,0,0,0,1.118,1.118h12.3a1.122,1.122,0,0,0,1.118-1.118V10.384A.07.07,0,0,0,17.794,10.335Z"
-                        transform="translate(0 -1.227)" fill="#fff" />
+                        transform="translate(0 -1.227)"  />
                       <path id="Path_18" data-name="Path 18"
                         d="M11.072,14.274a1.9,1.9,0,0,0,1.366-.573L17.921,8.12a1.1,1.1,0,0,0-.692-.245H4.918a1.091,1.091,0,0,0-.692.245L9.709,13.7A1.9,1.9,0,0,0,11.072,14.274Z"
-                        transform="translate(-0.428 0)" fill="#fff" />
+                        transform="translate(-0.428 0)"  />
                     </g>
                   </svg>
                 </li>
               </ul>
             </div>
-            <div>02539898952</div>
+            
           </div>
         </div>
+        <div class="desc col-span-5 order-2 flex flex-col text-justify h-[70%] overflow-auto w-[97%]">
+          <div class="desc-item">
+            <div class="title text-black font-bold text-[22px]">توضیحات لندینگ خانه مادری</div>
+            <div class="content text-[18px] ">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
+              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+              برای طراحان
+            </div>
+          </div>
+          <div class="desc-item">
+            <div class="title  text-black font-bold text-[22px]">توضیحات درباره ما</div>
+            <div class="content text-[18px] ">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
+              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+              برای طراحان
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-span-4 order-3 bg-cover w-full h-[85%]" 
+        style="background-image: url('/src/assets/images/door.png');">
+        </div>
       </div>
-      <div class="row">
+      <div class="bg-white text-black h-[60px] flex items-center justify-center">
         تمامی حقوق این وبسایت متعلق به دفتر تبلیغات اسلامی میباشد و هر گونه
         کپی برداری از آن پیگرد قانونی خواهد داشت
       </div>
     </footer>
+    
   </div>
   <!-- Js -->
   <script src="/src/assets/plugins/jquery/jquery-3.5.1.min.js"></script>

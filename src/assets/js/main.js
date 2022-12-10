@@ -1,12 +1,15 @@
-$(document).ready(()=>{
+$(document).ready(() => {
   $(window).scroll(() => {
-    if ($(window).scrollTop() > 80) {
-      $('.navbar-div').addClass('sticky')
-    } else {
-      $('.navbar-div').removeClass('sticky')
+    if (innerWidth > 640) {
+      if ($(window).scrollTop() > 80) {
+        $(".navbar-div").addClass("sticky");
+      } else {
+        $(".navbar-div").removeClass("sticky");
+      }
     }
   });
-  $('.owl-carousel').owlCarousel({
+
+  $(".owl-carousel").owlCarousel({
     rtl: true,
     loop: true,
     responsiveClass: true,
@@ -25,7 +28,7 @@ $(document).ready(()=>{
       },
       1000: {
         items: 8,
-      }
-    }
-  })
-})
+      },
+    },
+  });
+});

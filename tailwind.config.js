@@ -5,9 +5,7 @@ module.exports = {
     container: {
       center: true,
     },
-    screens: {
-      '2xl': '1280px',
-    },
+  
     colors: {
       golden: "#C19746",
       navy: "#292C67",
@@ -18,7 +16,12 @@ module.exports = {
     fontFamily: {
       farhang: ["farhang"],
     },
-    extend: {},
+    extend: {
+      screens: {
+        'xs':'500px',
+        '2xl': '1280px',
+      },
+    },
   },
   plugins: [],
 };
