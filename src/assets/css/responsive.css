@@ -1,7 +1,9 @@
 /* -------------- Navbar -------------- */
 @media only screen and (max-width: 640px) {
+  body,
   body > * {
     overflow-x: hidden !important;
+    user-zoom:fixed;
   }
   .menu li {
     margin: 10px;

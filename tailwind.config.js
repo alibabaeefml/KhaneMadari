@@ -1,25 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/views/*.{html,js}"],
+  content: ["./src/views"],
   theme: {
-    container: {
-      center: true,
-    },
-  
-    colors: {
-      golden: "#C19746",
-      navy: "#292C67",
-      yellow: "#FFDC7B",
-      white: "#fff",
-      black:"#000",
-    },
-    fontFamily: {
-      farhang: ["farhang"],
-    },
     extend: {
+      container: {
+        center: true,
+      },
+
+      colors: {
+        golden: "#C19746",
+        navy: "#292C67",
+        yellow: "#FFDC7B",
+        white: "#fff",
+        black: "#000",
+      },
+      fontFamily: {
+        farhang: ["farhang"],
+      },
       screens: {
-        'xs':'500px',
-        '2xl': '1280px',
+        xxs: "300px",
+        xs: "500px",
+        "2xl": "1280px",
       },
     },
   },
