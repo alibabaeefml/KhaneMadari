@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="fa" lang="ar">
+  <!DOCTYPE html>
+  <html lang="fa" lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,21 +8,25 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/css/main.css" />
-    <link rel="stylesheet" href="/src/assets/css/responsive.css" />
+     <!-- Main Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+     <!-- Fonts -->
     <link
       rel="stylesheet"
       href="https://gitcdn.ir/library/PersianFonts/farhang/fontiran.css"
     />
-    <link rel="stylesheet" href="/src/assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/src/assets/css/owl.theme.default.min.css" />
-    <link href="/dist/output.css" rel="stylesheet" />
+     <!-- Slider Styles -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
+    <!-- Tailwind Converted Styles -->
+    <link href="../../dist/output.css" rel="stylesheet" />
   </head>
   <body class="bg-black 2xl:container max-2xl:container-fluid text-white" dir="rtl">
     <!-- Nav Bar -->
     <button
       class="hidden fixed z-[99999] top-5 right-5  max-sm:flex items-center justify-center
-       bg-navy fill-white hover:bg-white hover:fill-navy w-10 h-10 font-black border-2 rounded-lg"
+        bg-navy fill-white hover:bg-white hover:fill-navy w-10 h-10 font-black border-2 rounded-lg"
       onclick="$('.navbar-div').toggleClass('max-sm:hidden');$('.close-icon, .menu-icon').toggleClass('hidden');$(this).toggleClass('bg-white fill-navy')"
     >
       <span class="close-icon hidden  duration-300">
@@ -39,7 +43,7 @@
       >
         <ul class="menu flex flex-row max-sm:flex-col items-center">
           <li class="navbar-logo max-sm:w-[95%]">
-            <img src="/src/assets/images/navbar_logo.png" />
+            <img src="../assets/images/navbar_logo.png" />
           </li>
           <li class="px-3 current"><a href="">صفحه اصلی</a></li>
           <li class="px-3"><a href="">دوره ها</a></li>
@@ -68,10 +72,11 @@
         </ul>
       </nav>
     </div>
-    <div class="wrapper flex flex-col center bg-golden text-white">
+        <!-- Wrapper -->
+    <div class="wrapper flex flex-col center bg-golden text-white" style="background-image: url('../assets/images/index_bg.png');">
       <!-- Quote -->
       <section class="quote mt-[66%]">
-        <h1 class="section-title">خانه مادری</h1>
+        <h1 class="section-title text-[50px] font-bold">خانه مادری</h1>
         <p class="max-w-[80%] mx-auto text-justify text-[20px]">
           فاطمه‌ی زهرا سلام الله علیها به صورت، یک بشر و یک زن، آن هم زنی جوان
           است؛ اما در معنا، یک حقیقت عظیم و یک نور درخشان الهی و یک بنده‌ی صالح
@@ -89,7 +94,7 @@
       <section class="training-courses mt-16">
         <div class="title-div flex items-center justify-center">
           <img src="../assets/images/title_vintage.png" alt="" />
-          <h1 class="section-title text-[36px]">دوره های آموزشی</h1>
+          <h1 class="section-title text-[36px] font-bold">دوره های آموزشی</h1>
           <img src="../assets/images/title_vintage.png" alt="" />
         </div>
         <div
@@ -273,7 +278,7 @@
         <div class="course_items_div w-[80%] mx-auto grid grid-cols-12 gap-4">
           <div
             class="course_item xl:col-span-3 lg:col-span-4 md:col-span-6 max-md:col-span-12 max-md:mx-auto bg-yellow text-black rounded-3xl border-white border-2 flex
-             flex-col hover:bg-navy hover:text-yellow duration-300 group"
+              flex-col hover:bg-navy hover:text-yellow duration-300 group"
           >
             <div class="h-[50%]">
               <img
@@ -293,7 +298,7 @@
                 >
                   <img
                     class="w-full h-full object-cover rounded-2xl"
-                    src="/src/assets/images/teacher_avatar.png"
+                    src="../assets/images/teacher_avatar.png"
                     alt=""
                   />
                 </div>
@@ -328,7 +333,7 @@
           </div>
           <div
           class="course_item xl:col-span-3 lg:col-span-4 md:col-span-6 max-md:col-span-12 max-md:mx-auto bg-yellow text-black rounded-3xl border-white border-2 flex
-           flex-col hover:bg-navy hover:text-yellow duration-300 group"
+            flex-col hover:bg-navy hover:text-yellow duration-300 group"
         >
           <div class="h-[50%]">
             <img
@@ -348,7 +353,7 @@
               >
                 <img
                   class="w-full h-full object-cover rounded-2xl"
-                  src="/src/assets/images/teacher_avatar.png"
+                  src="../assets/images/teacher_avatar.png"
                   alt=""
                 />
               </div>
@@ -383,7 +388,7 @@
         </div>
         <div
         class="course_item xl:col-span-3 lg:col-span-4 md:col-span-6 max-md:col-span-12 max-md:mx-auto bg-yellow text-black rounded-3xl border-white border-2 flex
-         flex-col hover:bg-navy hover:text-yellow duration-300 group"
+          flex-col hover:bg-navy hover:text-yellow duration-300 group"
       >
         <div class="h-[50%]">
           <img
@@ -403,7 +408,7 @@
             >
               <img
                 class="w-full h-full object-cover rounded-2xl"
-                src="/src/assets/images/teacher_avatar.png"
+                src="../assets/images/teacher_avatar.png"
                 alt=""
               />
             </div>
@@ -438,7 +443,7 @@
       </div>
       <div
       class="course_item xl:col-span-3 lg:col-span-4 md:col-span-6 max-md:col-span-12 max-md:mx-auto bg-yellow text-black rounded-3xl border-white border-2 flex
-       flex-col hover:bg-navy hover:text-yellow duration-300 group"
+        flex-col hover:bg-navy hover:text-yellow duration-300 group"
     >
       <div class="h-[50%]">
         <img
@@ -458,7 +463,7 @@
           >
             <img
               class="w-full h-full object-cover rounded-2xl"
-              src="/src/assets/images/teacher_avatar.png"
+              src="../assets/images/teacher_avatar.png"
               alt=""
             />
           </div>
@@ -500,7 +505,7 @@
       <section class="training-models mt-16">
         <div class="title-div flex items-center justify-center">
           <img src="../assets/images/title_vintage.png" alt="" />
-          <h1 class="section-title text-[36px]">مدل های آموزشی</h1>
+          <h1 class="section-title text-[36px] font-bold">مدل های آموزشی</h1>
           <img src="../assets/images/title_vintage.png" alt="" />
         </div>
         <div class="model-cats w-[90%] relative mx-auto mt-16">
@@ -637,7 +642,124 @@
             <div class="w-[30%] max-sm:w-full max-sm:h-[50%]">
               <img
                 class="w-full h-full object-cover sm:rounded-r-3xl max-sm:rounded-t-3xl"
-                src="/src/assets/images/5693162.png"
+                src="../assets/images/5693162.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="model-wrapper w-full max-sm:h-[50%] p-3 text-right flex flex-col justify-between"
+            >
+              <div class="flex flex-col">
+                <span class="pre-title text-[15px] max-sm:max-sm:text-[15px]"
+                  >روتیتر</span
+                >
+                <span
+                  class="title text-[20px] font-bold text-navy duration-300 group-hover:text-yellow"
+                >
+                  مهدویت در حفظ بنیان خانواده
+                </span>
+              </div>
+              <div class="model-content h-[70px] text-justify text-[13px] overflow-auto">
+                <p>
+                  ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است
+                </p>
+              </div>
+              <div class="flex items-center">
+                <a
+                  class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
+                  href=""
+                  >مشاهده و ثبت نام</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="model-item w-fit h-fit max-sm:w-[70%] max-sm:mx-auto xl:col-span-6 max-xl:col-span-12 bg-yellow text-black rounded-3xl border-white border-2 flex max-sm:flex-col  hover:bg-navy hover:text-white duration-300 group"
+          >
+            <div class="w-[30%] max-sm:w-full max-sm:h-[50%]">
+              <img
+                class="w-full h-full object-cover sm:rounded-r-3xl max-sm:rounded-t-3xl"
+                src="../assets/images/5693162.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="model-wrapper w-full max-sm:h-[50%] p-3 text-right flex flex-col justify-between"
+            >
+              <div class="flex flex-col">
+                <span class="pre-title text-[15px] max-sm:max-sm:text-[15px]"
+                  >روتیتر</span
+                >
+                <span
+                  class="title text-[20px] font-bold text-navy duration-300 group-hover:text-yellow"
+                >
+                  مهدویت در حفظ بنیان خانواده
+                </span>
+              </div>
+              <div class="model-content h-[70px] text-justify text-[13px] overflow-auto">
+                <p>
+                  ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است
+                </p>
+              </div>
+              <div class="flex items-center">
+                <a
+                  class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
+                  href=""
+                  >مشاهده و ثبت نام</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="model-item w-fit h-fit max-sm:w-[70%] max-sm:mx-auto xl:col-span-6 max-xl:col-span-12 bg-yellow text-black rounded-3xl border-white border-2 flex max-sm:flex-col  hover:bg-navy hover:text-white duration-300 group"
+          >
+            <div class="w-[30%] max-sm:w-full max-sm:h-[50%]">
+              <img
+                class="w-full h-full object-cover sm:rounded-r-3xl max-sm:rounded-t-3xl"
+                src="../assets/images/5693162.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="model-wrapper w-full max-sm:h-[50%] p-3 text-right flex flex-col justify-between"
+            >
+              <div class="flex flex-col">
+                <span class="pre-title text-[15px] max-sm:max-sm:text-[15px]"
+                  >روتیتر</span
+                >
+                <span
+                  class="title text-[20px] font-bold text-navy duration-300 group-hover:text-yellow"
+                >
+                  مهدویت در حفظ بنیان خانواده
+                </span>
+              </div>
+              <div class="model-content h-[70px] text-justify text-[13px] overflow-auto">
+                <p>
+                  ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است
+                </p>
+              </div>
+              <div class="flex items-center">
+                <a
+                  class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
+                  href=""
+                  >مشاهده و ثبت نام</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="model-item w-fit h-fit max-sm:w-[70%] max-sm:mx-auto xl:col-span-6 max-xl:col-span-12 bg-yellow text-black rounded-3xl border-white border-2 flex max-sm:flex-col  hover:bg-navy hover:text-white duration-300 group"
+          >
+            <div class="w-[30%] max-sm:w-full max-sm:h-[50%]">
+              <img
+                class="w-full h-full object-cover sm:rounded-r-3xl max-sm:rounded-t-3xl"
+                src="../assets/images/5693162.png"
                 alt=""
               />
             </div>
@@ -679,7 +801,7 @@
       <section class="training-docs mt-16">
         <div class="title-div flex items-center justify-center">
           <img src="../assets/images/title_vintage.png" alt="" />
-          <h1 class="section-title text-[36px]">مستند های آموزشی</h1>
+          <h1 class="section-title text-[36px] font-bold">مستند های آموزشی</h1>
           <img src="../assets/images/title_vintage.png" alt="" />
         </div>
         <div class="doc-cats w-[90%] relative mx-auto mt-16">
@@ -812,7 +934,7 @@
         >
           <div
             class="doc_item flex flex-col  lg:col-span-4 md:col-span-6 max-md:col-span-12 h-[410px] bg-yellow text-black rounded-3xl
-             border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
+              border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
           >
             <div class="w-full h-[50%]">
               <img
@@ -864,7 +986,7 @@
               <div class="flex items-center">
                 <a
                   class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
-                 href=""
+                  href=""
                   >مشاهده و ثبت نام</a
                 >
               </div>
@@ -872,7 +994,7 @@
           </div>
           <div
             class="doc_item flex flex-col  lg:col-span-4 md:col-span-6 max-md:col-span-12 h-[410px] bg-yellow text-black rounded-3xl
-             border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
+              border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
           >
             <div class="w-full h-[50%]">
               <img
@@ -924,7 +1046,7 @@
               <div class="flex items-center">
                 <a
                   class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
-                 href=""
+                  href=""
                   >مشاهده و ثبت نام</a
                 >
               </div>
@@ -932,7 +1054,7 @@
           </div>
           <div
             class="doc_item flex flex-col  lg:col-span-4 md:col-span-6 max-md:col-span-12 h-[410px] bg-yellow text-black rounded-3xl
-             border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
+              border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
           >
             <div class="w-full h-[50%]">
               <img
@@ -984,7 +1106,7 @@
               <div class="flex items-center">
                 <a
                   class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
-                 href=""
+                  href=""
                   >مشاهده و ثبت نام</a
                 >
               </div>
@@ -992,7 +1114,7 @@
           </div>
           <div
             class="doc_item flex flex-col  lg:col-span-4 md:col-span-6 max-md:col-span-12 h-[410px] bg-yellow text-black rounded-3xl
-             border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
+              border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
           >
             <div class="w-full h-[50%]">
               <img
@@ -1044,7 +1166,7 @@
               <div class="flex items-center">
                 <a
                   class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
-                 href=""
+                  href=""
                   >مشاهده و ثبت نام</a
                 >
               </div>
@@ -1052,7 +1174,7 @@
           </div>
           <div
             class="doc_item flex flex-col  lg:col-span-4 md:col-span-6 max-md:col-span-12 h-[410px] bg-yellow text-black rounded-3xl
-             border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
+              border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
           >
             <div class="w-full h-[50%]">
               <img
@@ -1104,7 +1226,7 @@
               <div class="flex items-center">
                 <a
                   class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
-                 href=""
+                  href=""
                   >مشاهده و ثبت نام</a
                 >
               </div>
@@ -1112,7 +1234,7 @@
           </div>
           <div
             class="doc_item flex flex-col  lg:col-span-4 md:col-span-6 max-md:col-span-12 h-[410px] bg-yellow text-black rounded-3xl
-             border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
+              border-white border-2  hover:bg-navy hover:text-white duration-300 group relative"
           >
             <div class="w-full h-[50%]">
               <img
@@ -1164,7 +1286,7 @@
               <div class="flex items-center">
                 <a
                   class="visit-register-btn w-full text-center bg-navy text-white rounded-2xl p-2 group-hover:bg-white group-hover:text-navy duration-300"
-                 href=""
+                  href=""
                   >مشاهده و ثبت نام</a
                 >
               </div>
@@ -1339,7 +1461,7 @@
           >
             <img
               class="w-full h-full  object-cover mt-10"
-              src="/src/assets/images/door.png"
+              src="../assets/images/door.png"
               alt=""
             />
           </div>
@@ -1353,8 +1475,8 @@
       </footer>
     </div>
     <!-- Js -->
-    <script src="/src/assets/plugins/jquery/jquery-3.5.1.min.js"></script>
-    <script src="/src/assets/js/main.js"></script>
-    <script src="/src/assets/plugins/owl_carousel/owl.carousel.min.js"></script>
+    <script src="../assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/plugins/owl_carousel/owl.carousel.min.js"></script>
   </body>
-</html>
+  </html>
