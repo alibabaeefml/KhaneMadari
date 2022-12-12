@@ -26,10 +26,7 @@ li {
 
 /* ----------------------------------- */
 /* ----------------------------------- */
-.owl-carousel{
-  display: flex!important;
-  align-items: center!important;
-}
+
 /* -------------- Individuals -------------- */
 .wrapper {
   background-image: url(../images/index_bg.png);
@@ -37,6 +34,7 @@ li {
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;
+  overflow: hidden;
 }
 
 /* --------------  Nav Bar -------------- */
@@ -92,35 +90,37 @@ li {
 }
 
 /* -------------- Navbar on scroll -------------- */
-.navbar-div.sticky {
-  background-color: #fff;
-  color: var(--navy);
-  border-radius: 0 0 50px 50px;
-  height: 100px;
-}
-
-.navbar-div.sticky .menu li {
-  align-self: flex-start;
-  margin: 30px 0 0 0;
-}
-
-.navbar-div.sticky .brands-ul {
-  margin: 10px 0 0 0;
-}
-
-.navbar-div.sticky .navbar-logo {
-  margin: 0 !important;
-  width: 40%;
-}
-
-.navbar-div.sticky .menu li:hover::after,
-.navbar-div.sticky .menu li.current::after {
-  background-color: var(--navy);
-}
-
-.navbar-div.sticky .tabliqat_logo,
-.navbar-div.sticky .mobasheran_logo {
-  filter: unset;
+@media (min-width:640px) {
+  .navbar-div.sticky {
+    background-color: #fff;
+    color: var(--navy);
+    border-radius: 0 0 50px 50px;
+    height: 100px;
+  }
+  
+  .navbar-div.sticky .menu li {
+    align-self: flex-start;
+    margin: 30px 0 0 0;
+  }
+  
+  .navbar-div.sticky .brands-ul {
+    margin: 10px 0 0 0;
+  }
+  
+  .navbar-div.sticky .navbar-logo {
+    margin: 0 !important;
+    width: 40%;
+  }
+  
+  .navbar-div.sticky .menu li:hover::after,
+  .navbar-div.sticky .menu li.current::after {
+    background-color: var(--navy);
+  }
+  
+  .navbar-div.sticky .tabliqat_logo,
+  .navbar-div.sticky .mobasheran_logo {
+    filter: unset;
+  }
 }
 
 /* ----------------------------------- */
@@ -133,6 +133,7 @@ li {
 .course_cat {
   position: relative;
   margin: 5px;
+  min-height: 200px;
 }
 
 .course_cat svg {
