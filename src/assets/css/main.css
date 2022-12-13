@@ -6,15 +6,16 @@
   --white-img: brightness(0) invert(1);
   --pace: 0.3s cubic-bezier(1, 0, 0, 1);
 }
-select,input{
+select,
+input {
   background: unset;
   outline: none;
 }
-select{
+select {
   cursor: pointer;
 }
 /* -------------- Elements -------------- */
-body{
+body {
   font-family: farhang;
   font-weight: 500;
 }
@@ -29,8 +30,6 @@ li {
 }
 
 /* ----------------------------------- */
-
-
 
 /* -------------- Individuals -------------- */
 .wrapper {
@@ -94,33 +93,33 @@ li {
 }
 
 /* -------------- Navbar on scroll -------------- */
-@media (min-width:640px) {
+@media (min-width: 640px) {
   .navbar-div.sticky {
     background-color: #fff;
     color: var(--navy);
     border-radius: 0 0 50px 50px;
     height: 100px;
   }
-  
+
   .navbar-div.sticky .menu li {
     align-self: flex-start;
     margin: 30px 0 0 0;
   }
-  
+
   .navbar-div.sticky .brands-ul {
     margin: 10px 0 0 0;
   }
-  
+
   .navbar-div.sticky .navbar-logo {
     margin: 0 !important;
     width: 40%;
   }
-  
+
   .navbar-div.sticky .menu li:hover::after,
   .navbar-div.sticky .menu li.current::after {
     background-color: var(--navy);
   }
-  
+
   .navbar-div.sticky .tabliqat_logo,
   .navbar-div.sticky .mobasheran_logo {
     filter: unset;
@@ -153,7 +152,6 @@ li {
     drop-shadow(0 27px 13px rgb(0 0 0 / 0.08));
 }
 
-
 /* -------------- Models Section -------------- */
 .app-btn {
   margin: 10px;
@@ -168,7 +166,6 @@ li {
 }
 
 /* ----------------------------------- */
-
 
 /* Responsive Css File */
 @import url(/src/assets/css/responsive.css);
