@@ -1,14 +1,4 @@
 $(document).ready(() => {
-  $(window).scroll(() => {
-    if (innerWidth > 640 && !$('.navbar-div.sticky').length) {
-      if ($(window).scrollTop() > 80) {
-        $(".navbar-div").addClass("sticky");
-      } else {
-        $(".navbar-div").removeClass("sticky");
-      }
-    }
-  });
-
   $(".owl-carousel").owlCarousel({
     rtl: true,
     loop: true,
