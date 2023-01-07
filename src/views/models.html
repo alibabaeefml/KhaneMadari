@@ -147,6 +147,58 @@
           </div>
         </div>
       </section>
+      <!-- Model Video Accordions -->
+      <section>
+        <div class="model-accordion-list">
+          <div
+            class="model-accordion-item bg-yellow text-navy sm:text-[20px] font-bold w-[80%] mx-auto rounded-3xl p-5 cursor-pointer border-2 border-white"
+          >
+            <div
+              class="model-accordion-title flex justify-between items-center duration-300 hover:bg-[#f2c74f] p-3 rounded-3xl"
+              accordion-data="53166561"
+            >
+              <p>01 - مهدویت در حفظ بنیان خانواده</p>
+              <span class="model-accordion-icon cursor-pointer duration-300 rotate-90 stroke-navy" accordion-data="53166561">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8.413"
+                  height="13.079"
+                  viewBox="0 0 8.413 13.079"
+                >
+                  <g
+                    id="Component_2_15"
+                    data-name="Component 2 – 15"
+                    transform="translate(1.081 1.04)"
+                  >
+                    <line
+                      id="Line_3"
+                      data-name="Line 3"
+                      x2="6.25"
+                      y2="6.5"
+                      stroke-width="3"
+                    ></line>
+                    <line
+                      id="Line_4"
+                      data-name="Line 4"
+                      y1="6.5"
+                      x2="6.25"
+                      transform="translate(0 4.5)"
+                      stroke-width="3"
+                    ></line>
+                  </g>
+                </svg>
+              </span>
+            </div>
+            <div
+              class="model-accordion-video mt-2 rounded-lg"
+              style="display: none"
+              accordion-data="53166561"
+            >
+              <video class="rounded-lg w-full border-2 border-white" controls src="../assets/videos/mov_bbb.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Relevant Items Div -->
       <section>
         <div
@@ -517,5 +569,17 @@
     <script src="../assets/plugins/jquery/jquery-3.5.1.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/plugins/owl_carousel/owl.carousel.min.js"></script>
+    <script>
+      $(".model-accordion-title").click((e) => {
+        let accordion_data = e.currentTarget.getAttribute("accordion-data");
+        $(".model-accordion-video").each((i, video) => {
+          let video_data = $(video).attr("accordion-data");
+          if (accordion_data == video_data) {
+            $(video).slideToggle();
+            $(".model-accordion-icon").toggleClass("-rotate-90")
+          }
+        });
+      });
+    </script>
   </body>
 </html>
